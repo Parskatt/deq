@@ -10,13 +10,13 @@ import os
 
 sys.path.append('../../')
 
-from modules.optimizations import weight_norm, VariationalDropout, VariationalHidDropout, VariationalAttnDropout
-from modules.solvers import anderson, broyden
+from deq.modules.optimizations import weight_norm, VariationalDropout, VariationalHidDropout, VariationalAttnDropout
+from deq.modules.solvers import anderson, broyden
 
-from utils.adaptive_embedding import AdaptiveEmbedding
-from utils.positional_embedding import PositionalEmbedding
-from utils.proj_adaptive_softmax import ProjectedAdaptiveLogSoftmax
-from utils.log_uniform_sampler import LogUniformSampler, sample_logits
+from deq.utils.adaptive_embedding import AdaptiveEmbedding
+from deq.utils.positional_embedding import PositionalEmbedding
+from deq.utils.proj_adaptive_softmax import ProjectedAdaptiveLogSoftmax
+from deq.utils.log_uniform_sampler import LogUniformSampler, sample_logits
 
 
 class WeightSharePositionwiseFF(nn.Module):
