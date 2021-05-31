@@ -8,7 +8,7 @@ import numpy as np
 from termcolor import colored
 import os
 
-sys.path.append('../../')
+#sys.path.append('../../')
 
 from deq.modules.optimizations import weight_norm, VariationalDropout, VariationalHidDropout, VariationalAttnDropout
 from deq.modules.solvers import anderson, broyden
